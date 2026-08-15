@@ -251,7 +251,7 @@ For more help, see [RUNNING_GUIDE.md](RUNNING_GUIDE.md) or [FIX_SUMMARY.md](FIX_
 
 ---
 
-## 🎓 Learning Outcomes
+## 🎓 Learning O[application.yml](userservice/src/main/resources/application.yml)utcomes
 
 - ✅ How to design and implement microservices
 - ✅ Service discovery and registry patterns
