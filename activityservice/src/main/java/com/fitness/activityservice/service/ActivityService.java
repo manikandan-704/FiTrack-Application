@@ -7,11 +7,14 @@ import com.fitness.activityservice.model.Activity;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 //import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.beans.factory.annotation.Value;
+//import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
+//import java.util.List;
+//import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -19,7 +22,7 @@ import java.util.stream.Collectors;
 public class ActivityService {
 
     private final ActivityRepository activityRepository;
-    private final UserValidationService userValidationService;
+//    private final UserValidationService userValidationService;
 //    private final RabbitTemplate rabbitTemplate;
 
 //    @Value("${rabbitmq.exchange.name}")
@@ -30,10 +33,10 @@ public class ActivityService {
 
     public ActivityResponse trackActivity(ActivityRequest request) {
 
-        boolean isValidUser = userValidationService.validateUser(request.getUserId());
-        if (!isValidUser) {
-            throw new RuntimeException("Invalid User: " + request.getUserId());
-        }
+//        boolean isValidUser = userValidationService.validateUser(request.getUserId());
+//        if (!isValidUser) {
+//            throw new RuntimeException("Invalid User: " + request.getUserId());
+//        }
 
         Activity activity = Activity.builder()
                 .userId(request.getUserId())
