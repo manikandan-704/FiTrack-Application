@@ -5,10 +5,10 @@ spring:
     name: activity-service
   data:
     mongodb:
-      uri: mongodb://localhost:27017/activity
-      database: activity
-  config:
-    import: optional:configserver:http://localhost:8888
+      uri: mongodb://localhost:27017/fitnessActivity
+      database: fitnessActivity
+#  config:
+#    import: optional:configserver:http://localhost:8888
 
 eureka:
   client:
